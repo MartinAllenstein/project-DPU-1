@@ -1,19 +1,5 @@
 using UnityEngine;
 
-public class ItemCube : MonoBehaviour,IInteractable
+public class ItemCube : ItemBase
 {
-    public void Interact()
-    {
-        Debug.Log("Interact : Cube");
-    }
-    
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }

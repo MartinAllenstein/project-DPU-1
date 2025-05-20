@@ -17,7 +17,18 @@ public class Player : MonoBehaviour
             {
                 Debug.Log(hit.collider.gameObject.name);
                 IInteractable interactable = hit.collider.gameObject.GetComponent<IInteractable>();
+                interactable.Interact();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            GameManager.instance.OpenInventoryPanel();
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            GameManager.instance.CloseInventoryPanel();
         }
     }
 }

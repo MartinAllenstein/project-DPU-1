@@ -1,9 +1,9 @@
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class ItemButton : MonoBehaviour
 {
     public ItemData data;
-    public Image Icon;
+    public Image icon;
     
 }
